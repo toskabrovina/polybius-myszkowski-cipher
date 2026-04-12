@@ -1,5 +1,4 @@
 # Myszkowski Transposition Cipher
-# Implementim per enkriptim dhe dekriptim
 
 from typing import List, Dict
 def clean_text(text: str) -> str:
