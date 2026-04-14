@@ -1,5 +1,8 @@
 """
 Implementimi i Polybius Square cipher ne Python.
+
+Cdo shkronje e plaintext'i do te zevendesohet me koordinatat e saj ne nje matrice 5x5.
+Shkronja "J" do te trajtohet si "I" per te pershtatur alfabetin ne 25 shkronja.(Rregull standarde per Polybius Square).
 """
 
 
@@ -10,6 +13,11 @@ class PolybiusSquare:
 
     # ------------------------------------------------------------------
     def _build_square(self, keyword: str):
+        """
+        Ndertimi i matrices 5x5.
+        Nese jepet keyword, shkronjat e tij do te jene te para ne matrice, 
+        ndjekur nga shkronjat e mbetura te alfabetit.
+        """
         keyword = keyword.upper().replace("J", "I")
         seen = []
         for ch in keyword:
@@ -29,6 +37,7 @@ class PolybiusSquare:
 
     # ------------------------------------------------------------------
     def encrypt(self, plaintext: str) -> str:
+        """Kthe tekstin e shifruar si cifte koordinatash te ndara me hapesire."""
         plaintext = plaintext.upper().replace("J", "I")
         result = []
         for ch in plaintext:
@@ -44,7 +53,7 @@ def demo_polybius():
 
     keyword = input("  Keyword (Press \"<ENTER>\" for basic Latin alphabet): ").strip()
     ps = PolybiusSquare(keyword)
-
+       
     plaintext = input("  Plaintext: ").strip()
     encrypted = ps.encrypt(plaintext)
 
