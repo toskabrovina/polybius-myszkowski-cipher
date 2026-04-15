@@ -83,3 +83,52 @@ def encrypt_myszkowski(plaintext: str, keyword: str, pad_char: str = "X") -> Dic
         "ciphertext": ciphertext
     }
 
+
+
+def decrypt_myszkowski(ciphertext: str, keyword: str, pad_char: str = "X", remove_padding: bool = False) -> Dict:
+    key = validate_keyword(keyword)
+    cleaned_ciphertext = clean_text(ciphertext)
+    ranks = get_myszkowski_ranks(key)
+
+    columns = len(key)
+
+    if len(cleaned_ciphertext) % columns != 0:
+        raise ValueError("Ciphertext-i nuk ka gjatësi të vlefshme për këtë çelës.")
+
+    rows = len(cleaned_ciphertext) // columns
+    matrix = [["" for _ in range(columns)] for _ in range(rows)]
+
+    index = 0
+
+    for rank in sorted(set(ranks)):
+        columns_with_same_rank = [i for i, value in enumerate(ranks) if value == rank]
+
+        if len(columns_with_same_rank) == 1:
+            col = columns_with_same_rank[0]
+            for row in range(rows):
+                matrix[row][col] = cleaned_ciphertext[index]
+                index += 1
+        else:
+            for row in range(rows):
+                for col in columns_with_same_rank:
+                    matrix[row][col] = cleaned_ciphertext[index]
+                    index += 1
+
+    plaintext_with_padding = "".join("".join(row) for row in matrix)
+
+    if remove_padding:
+        plaintext = plaintext_with_padding.rstrip(pad_char)
+    else:
+        plaintext = plaintext_with_padding
+
+    return {
+        "keyword": key,
+        "ranks": ranks,
+        "ciphertext": cleaned_ciphertext,
+        "matrix": matrix,
+        "plaintext_with_padding": plaintext_with_padding,
+        "plaintext": plaintext
+    }
+
+
+    
