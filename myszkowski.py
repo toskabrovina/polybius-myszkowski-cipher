@@ -131,7 +131,7 @@ def decrypt_myszkowski(ciphertext: str, keyword: str, pad_char: str = "X", remov
     }
 
 
-    def demo_function():
+def demo_function():
     plaintext = "HELLO WORLD"
     keyword = "LETTER"
 
@@ -147,7 +147,7 @@ def decrypt_myszkowski(ciphertext: str, keyword: str, pad_char: str = "X", remov
 
 def main():
     while True:
-        print("      Myszkowski Transposition      ")
+        print("------Myszkowski Transposition------")
         print("1. Encrypt")
         print("2. Decrypt")
         print("3. Demo")
