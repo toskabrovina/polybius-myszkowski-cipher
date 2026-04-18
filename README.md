@@ -3,7 +3,9 @@ Ky projekt përmban implementimin e dy algoritmeve klasike të kriptografisë n�
 - Myszkowski Transposition Cipher
 - Polybius Square Cipher
 
-### Të dy algoritmet mbështesin:
+##### Të dy algoritmet mbështesin:
  Enkriptim (Encryption)
+ 
  Dekriptim (Decryption)
+ 
  Demo interaktive
