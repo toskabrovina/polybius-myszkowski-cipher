@@ -11,6 +11,6 @@ Ky projekt përmban implementimin e dy algoritmeve klasike të kriptografisë n�
  ## Myszkowski Transposition Cipher
 Myszkowski Cipher është një variant i columnar transposition cipher, ku:
   
-Teksti vendoset në një matricë sipas një keyword-i
-Kolonat lexohen sipas renditjes së shkronjave
-Shkronjat e njëjta në keyword trajtohen së bashku
+-Teksti vendoset në një matricë sipas një keyword-i
+-Kolonat lexohen sipas renditjes së shkronjave
+-Shkronjat e njëjta në keyword trajtohen së bashku
