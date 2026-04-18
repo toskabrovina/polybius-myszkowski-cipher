@@ -147,7 +147,7 @@ def demo_function():
 
 def main():
     while True:
-        print("------Myszkowski Transposition------")
+        print("-------Myszkowski Transposition-------")
         print("1. Encrypt")
         print("2. Decrypt")
         print("3. Demo")
