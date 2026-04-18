@@ -67,3 +67,6 @@ python polybius.py
 - Dekriptim
 - Demo
 
+<img width="475" height="183" alt="image" src="https://github.com/user-attachments/assets/5f5ca102-0623-4ef8-ad1a-619758b935f6" />
+
+
