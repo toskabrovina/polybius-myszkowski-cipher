@@ -29,13 +29,13 @@ Myszkowski Cipher është një variant i columnar transposition cipher.
 ----
 **Si të Ekzekutohet Projekti:**
 
-Klono repository-n:
+1. Klono repository-n:
 
 git clone <https://github.com/toskabrovina/polybius-myszkowski-cipher.git>
 
-Hape projektin në IDE (IntelliJ / PyCharm)
+2. Hape projektin në IDE (IntelliJ / PyCharm)
 
-Ekzekuto:
+3. Ekzekuto:
 
 python myszkowski.py
 
@@ -43,7 +43,7 @@ ose
 
 python polybius.py
 
-Ndiq menynë në terminal për:
+4. Ndiq menynë në terminal për:
 
 - Enkriptim
 - Dekriptim
