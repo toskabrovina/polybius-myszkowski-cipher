@@ -27,6 +27,24 @@ Myszkowski Cipher është një variant i columnar transposition cipher.
 5. Formohet ciphertext
 
 ----
+## Polybius Square Cipher
+###  Përshkrimi:
+
+Polybius Cipher është një metodë zëvendësimi që përdor një matricë 5x5.
+
+**Karakteristikat kryesore:**
+
+- Çdo shkronjë zëvendësohet me koordinata (rresht, kolonë)
+- Mund të përdoret keyword për personalizim
+- Përdor matricë 5x5
+
+**Si funksionon:**
+
+1. Ndërtohet matrica (me ose pa keyword)
+2. Çdo shkronjë kthehet në koordinata
+3. Formohet ciphertext si numra
+
+----
 **Si të Ekzekutohet Projekti:**
 
 1. Klono repository-n:
