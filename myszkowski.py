@@ -131,4 +131,52 @@ def decrypt_myszkowski(ciphertext: str, keyword: str, pad_char: str = "X", remov
     }
 
 
-    
+    def demo_function():
+    plaintext = "HELLO WORLD"
+    keyword = "LETTER"
+
+    encrypted = encrypt_myszkowski(plaintext, keyword)
+    decrypted = decrypt_myszkowski(encrypted["ciphertext"], keyword)
+
+    print("\n========== DEMO ==========")
+    print("Plaintext :", plaintext)
+    print("Keyword   :", keyword)
+    print("Encrypted :", encrypted["ciphertext"])
+    print("Decrypted :", decrypted["plaintext"])
+
+
+def main():
+    while True:
+        print("      Myszkowski Transposition      ")
+        print("1. Encrypt")
+        print("2. Decrypt")
+        print("3. Demo")
+        print("0. Exit")
+
+        choice = input("Zgjidh opsionin: ").strip()
+
+        if choice == "1":
+            plaintext = input("Shkruaj plaintext: ")
+            keyword = input("Shkruaj keyword: ")
+            result = encrypt_myszkowski(plaintext, keyword)
+            print("Encrypted text:", result["ciphertext"])
+
+        elif choice == "2":
+            ciphertext = input("Shkruaj ciphertext: ")
+            keyword = input("Shkruaj keyword: ")
+            result = decrypt_myszkowski(ciphertext, keyword)
+            print("Decrypted text:", result["plaintext"])
+
+        elif choice == "3":
+            demo_function()
+
+        elif choice == "0":
+            print("Programi u mbyll.")
+            break
+
+        else:
+            print("Opsion i pavlefshem. Provo perseri.")
+
+
+if __name__ == "__main__":
+    main()
