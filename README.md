@@ -1,2 +1,4 @@
-# polybius-myszkowski-cipher
-Një projekt në Java që implementon kodimin dhe dekodimin e tekstit duke përdorur algoritmet Polybius Square Cipher dhe Myszkowski Transposition.
+# Cryptography Project: Myszkowski & Polybius Ciphers
+Ky projekt përmban implementimin e dy algoritmeve klasike të kriptografisë në Python:
+## Myszkowski Transposition Cipher
+## Polybius Square Cipher
