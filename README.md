@@ -51,7 +51,7 @@ Polybius Cipher është një metodë zëvendësimi që përdor një matricë 5x5
 
 git clone <https://github.com/toskabrovina/polybius-myszkowski-cipher.git>
 
-2. Hape projektin në IDE (IntelliJ / PyCharm)
+2. Hape projektin në IDE (IntelliJ / PyCharm / Visual Studio Code)
 
 3. Ekzekuto:
 
@@ -68,5 +68,6 @@ python polybius.py
 - Demo
 
 <img width="475" height="183" alt="image" src="https://github.com/user-attachments/assets/5f5ca102-0623-4ef8-ad1a-619758b935f6" />
+<img width="471" height="163" alt="Polybius-Square" src="https://github.com/user-attachments/assets/0b1856f4-6fda-4d88-8ff2-1c73be26a3c3" />
 
 
